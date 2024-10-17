@@ -37,5 +37,18 @@ public class RechercheVilleTest {
                 "La recherche avec 'va' doit retourner Valence et Vancouver");
     }
 
+    @Test
+    public void testRecherchePartielle() {
+        List<String> resultats = rechercheVille.rechercher("ape");
+        assertEquals(Arrays.asList("Budapest"), resultats,
+                "La recherche avec 'ape' doit retourner Budapest");
+    }
 
+    @Test
+    public void testRechercheAsterisque() {
+        List<String> resultats = rechercheVille.rechercher("*");
+        assertEquals(Arrays.asList("Paris", "Budapest", "Rotterdam", "Valence", "Vancouver",
+                        "Amsterdam", "Vienne"), resultats,
+                "La recherche avec '*' doit retourner toutes les villes");
+    }
 }
