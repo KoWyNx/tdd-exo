@@ -11,8 +11,7 @@ public class RechercheVille {
     public RechercheVille() {
         this.villes = new ArrayList<>(Arrays.asList(
                 "Paris", "Budapest", "Rotterdam",
-                "Valence", "Vancouver", "Amsterdam", "Vienne",
-                "Sydney"
+                "Valence", "Vancouver", "Amsterdam", "Vienne"
         ));
     }
 
@@ -20,8 +19,12 @@ public class RechercheVille {
         if (mot.length() < 2 && !mot.equals("*")) {
             throw new NotImplementedException("Le texte de recherche doit contenir au moins 2 caractères.");
         }
+        if (mot.equals("*")) {
+            return new ArrayList<>(villes);
+        }
+
         return villes.stream()
-                .filter(ville -> ville.toLowerCase().startsWith(mot.toLowerCase()))
+                .filter(ville -> ville.toLowerCase().contains(mot.toLowerCase()))
                 .collect(Collectors.toList());
 
     }
