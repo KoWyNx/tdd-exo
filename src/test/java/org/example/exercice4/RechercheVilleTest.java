@@ -3,6 +3,9 @@ package org.example.exercice4;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RechercheVilleTest {
@@ -18,6 +21,13 @@ public class RechercheVilleTest {
         assertThrows(NotImplementedException.class, () -> {
             rechercheVille.rechercher("A");
         }, "Moins de 2 caractères");
+    }
+
+    @Test
+    public void testRechercheExacte() {
+        List<String> resultats = rechercheVille.rechercher("Va");
+        assertEquals(Arrays.asList("Valence", "Vancouver"), resultats,
+                "La recherche avec 'Va' doit retourner Valence et Vancouver");
     }
 
 
