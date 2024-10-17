@@ -24,6 +24,13 @@ public class RechercheVilleTest {
     }
 
     @Test
+    public void testRecherchePlusDeDeuxCaracteres() {
+        List<String> resultats = rechercheVille.rechercher("Amst");
+        assertEquals(Arrays.asList("Amsterdam"), resultats,
+                "La recherche avec 'Amst' doit retourner Amsterdam");
+    }
+
+    @Test
     public void testRechercheExacte() {
         List<String> resultats = rechercheVille.rechercher("Va");
         assertEquals(Arrays.asList("Valence", "Vancouver"), resultats,
