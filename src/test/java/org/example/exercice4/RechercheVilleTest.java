@@ -30,5 +30,12 @@ public class RechercheVilleTest {
                 "La recherche avec 'Va' doit retourner Valence et Vancouver");
     }
 
+    @Test
+    public void testRechercheInsensibleCasse() {
+        List<String> resultats = rechercheVille.rechercher("va");
+        assertEquals(Arrays.asList("Valence", "Vancouver"), resultats,
+                "La recherche avec 'va' doit retourner Valence et Vancouver");
+    }
+
 
 }
