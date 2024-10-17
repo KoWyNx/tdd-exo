@@ -21,7 +21,7 @@ public class RechercheVille {
             throw new NotImplementedException("Le texte de recherche doit contenir au moins 2 caractères.");
         }
         return villes.stream()
-                .filter(ville -> ville.startsWith(mot))
+                .filter(ville -> ville.toLowerCase().startsWith(mot.toLowerCase()))
                 .collect(Collectors.toList());
 
     }
