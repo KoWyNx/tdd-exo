@@ -1,6 +1,8 @@
 package org.example.exercice2;
 
 import static org.junit.Assert.*;
+
+import TDD.exercice2.Fib;
 import org.junit.Test;
 import java.util.List;
 

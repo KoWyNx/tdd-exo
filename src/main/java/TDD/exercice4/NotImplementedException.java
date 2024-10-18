@@ -1,4 +1,4 @@
-package org.example.exercice4;
+package TDD.exercice4;
 
 public class NotImplementedException extends RuntimeException {
 

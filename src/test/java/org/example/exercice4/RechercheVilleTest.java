@@ -1,5 +1,7 @@
 package org.example.exercice4;
 
+import TDD.exercice4.NotImplementedException;
+import TDD.exercice4.RechercheVille;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

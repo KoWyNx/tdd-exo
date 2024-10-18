@@ -1,4 +1,4 @@
-package org.example.exercice3;
+package TDD.exercice3;
 
 
 public class DiceScore {

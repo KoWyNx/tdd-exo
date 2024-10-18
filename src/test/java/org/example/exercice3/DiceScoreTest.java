@@ -1,5 +1,7 @@
 package org.example.exercice3;
 
+import TDD.exercice3.DiceScore;
+import TDD.exercice3.Ide;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;

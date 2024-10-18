@@ -1,5 +1,7 @@
 package org.example.exercice5;
 
+import TDD.exercice5.Product;
+import TDD.exercice5.Shop;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

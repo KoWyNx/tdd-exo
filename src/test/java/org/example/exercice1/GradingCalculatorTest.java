@@ -1,6 +1,8 @@
 package org.example.exercice1;
 
 import static org.junit.Assert.assertEquals;
+
+import TDD.exercice1.GradingCalculator;
 import org.junit.Test;
 
 public class GradingCalculatorTest {

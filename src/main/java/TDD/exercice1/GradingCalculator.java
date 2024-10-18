@@ -1,4 +1,4 @@
-package org.example.exercice1;
+package TDD.exercice1;
 
 public class GradingCalculator {
     public int score;

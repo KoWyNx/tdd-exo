@@ -1,4 +1,4 @@
-package org.example.exercice5;
+package TDD.exercice5;
 
 public class Product {
     private String type;
